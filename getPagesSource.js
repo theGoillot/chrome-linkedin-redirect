@@ -2,7 +2,9 @@
 // Demo: var serialized_html = DOMtoString(document);
 
 function DOMtoString(document_root) {
+    // var re = var re = /<a\s+(?:[^>]*?\s+)?href="([^"]*)"/;
     var html = '',
+
         node = document_root.firstChild;
     while (node) {
         switch (node.nodeType) {
@@ -25,8 +27,11 @@ function DOMtoString(document_root) {
         }
         node = node.nextSibling;
     }
-    return html;
+
+    return html ;
 }
+
+
 
 chrome.runtime.sendMessage({
     action: "getSource",
