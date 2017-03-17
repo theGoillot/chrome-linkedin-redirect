@@ -2,7 +2,7 @@
 // Demo: var serialized_html = DOMtoString(document);
 
 function DOMtoString(document_root) {
-    // var re = var re = /<a\s+(?:[^>]*?\s+)?href="([^"]*)"/;
+    var re = /<a\s+(?:[^>]*?\s+)?href="(https?:\/\/www\.linkedin\.com[^"]*)"/;
     var html = '',
 
         node = document_root.firstChild;
@@ -28,7 +28,9 @@ function DOMtoString(document_root) {
         node = node.nextSibling;
     }
 
-    return html ;
+    // return html.match(re)[1];
+    window.location.href = html.match(re)[1];
+
 }
 
 
