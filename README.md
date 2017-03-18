@@ -9,11 +9,6 @@ Install this extension, go on every company website, click on the extension and 
 ## Screenshots 
 ![alt tag](http://g.recordit.co/ZyinfuPNXY.gif)
 
-## Contributor
-
-
-<http://www.jeremy-goillot.com>
-
 ## Authors
 
 * **Jérémy Goillot**  - *Personal Hacks* - [jeremy-goillot.com](http://www.jeremy-goillot.com)
