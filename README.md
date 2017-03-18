@@ -16,4 +16,4 @@ Install this extension, go on every company website, click on the extension and 
 
 ## Authors
 
-* **Jérémy Goillot ** - *Initial work* - [jeremy-goillot.com](http://www.jeremy-goillot.com)
+* **Jérémy Goillot**  - *Personal Hacks* - [jeremy-goillot.com](http://www.jeremy-goillot.com)
