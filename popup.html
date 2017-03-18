@@ -14,11 +14,92 @@
       }
       #status {
         /* avoid an excessively wide status text */
-        white-space: pre;
-        text-overflow: ellipsis;
-        overflow: hidden;
-        max-width: 400px;
+        background: #fff;
+        border-radius: 4px;
+        width: 175px;
+        height: 65px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
       }
+
+      .linkTitle {
+        margin: 0;
+        color: #4285F4;
+        font-size: 16px;
+        line-height: 22px;
+        text-transform: uppercase;
+        font-weight: 600;
+        letter-spacing: .025em;
+        text-align: center;
+        margin-right: 8px;
+      }
+
+    .dot {
+        -webkit-animation: bob 1s cubic-bezier(0.445, 0.05, 0.55, 0.95) infinite;
+                animation: bob 1s cubic-bezier(0.445, 0.05, 0.55, 0.95) infinite;
+        border-radius: 100%;
+        float: left;
+        height: 0.2rem;
+        width: 0.2rem;
+        margin-top: 0.5rem;
+        -webkit-transform: translateY(-23%);
+                transform: translateY(-23%);
+      }
+        .dot:not(:last-child) {
+          margin-right: 0.2rem;
+        }
+        .dot:nth-child(1) {
+          -webkit-animation-delay: 0.15s;
+                  animation-delay: 0.15s;
+          background-color: #4285F4;
+        }
+        .dot:nth-child(2) {
+          -webkit-animation-delay: 0.3s;
+                  animation-delay: 0.3s;
+          background-color: #4285f4;
+        }
+        .dot:nth-child(3) {
+          -webkit-animation-delay: 0.45s;
+                  animation-delay: 0.45s;
+          background-color: #4285F4;
+        }
+        .dot:nth-child(4) {
+          -webkit-animation-delay: 0.6s;
+                  animation-delay: 0.6s;
+          background-color: #4285f4;
+        }
+
+        @-webkit-keyframes bob {
+          0% {
+            -webkit-transform: translateY(-23%);
+                    transform: translateY(-23%);
+          }
+          50% {
+            -webkit-transform: translateY(23%);
+                    transform: translateY(23%);
+          }
+          100% {
+            -webkit-transform: translateY(-23%);
+                    transform: translateY(-23%);
+          }
+        }
+
+        @keyframes bob {
+          0% {
+            -webkit-transform: translateY(-23%);
+                    transform: translateY(-23%);
+          }
+          50% {
+            -webkit-transform: translateY(23%);
+                    transform: translateY(23%);
+          }
+          100% {
+            -webkit-transform: translateY(-23%);
+                    transform: translateY(-23%);
+          }
+        }
+
     </style>
 
     <!--
@@ -30,8 +111,16 @@
     <script src="popup.js"></script>
   </head>
   <body>
-    <h1>RETURN LINKEDIN LINK</h1>
-    <div id='message'>Injecting Script....</div>
+    <div id="status">
+      <h1 class="linkTitle">Waiting</h1>
+
+      <div>
+        <div class='dot'></div>
+        <div class='dot'></div>
+        <div class='dot'></div>
+        <div class='dot'></div>
+      </div>
+    </div>
   </body>
 </html>
 
