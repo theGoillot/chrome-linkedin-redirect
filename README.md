@@ -11,5 +11,9 @@ Install this extension, go on every company website, click on the extension and 
 
 ## Contributor
 
-Jérémy Goillot 
+
 <http://www.jeremy-goillot.com>
+
+## Authors
+
+* **Jérémy Goillot ** - *Initial work* - [jeremy-goillot.com](http://www.jeremy-goillot.com)
