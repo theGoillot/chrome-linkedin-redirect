@@ -6,7 +6,8 @@ Install this extension, go on every company website, click on the extension and 
 
 ## Available at Chrome Web Store ==> Soon
 
-## Screenshots ==> Soon
+## Screenshots 
+![alt tag](http://g.recordit.co/ZyinfuPNXY.gif)
 
 ## Contributor
 
