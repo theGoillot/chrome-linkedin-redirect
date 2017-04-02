@@ -29,7 +29,11 @@ function DOMtoString(document_root) {
     }
 
     // return html.match(re)[1];
+
+
     window.location.href = html.match(re)[1];
+
+    return "We found !"
 
 }
 
